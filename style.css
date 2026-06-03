@@ -1,11 +1,9 @@
-
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: 'Courier New', Courier, monospace; 
 }
-
 body {
     background-color: #f7f5f0; 
     color: #333;
@@ -15,15 +13,9 @@ body {
     min-height: 100vh;
 }
 
-
-header {
+.main-header {
     text-align: center;
     padding: 20px 10px 5px 10px;
-}
-
-header h1 {
-    font-size: 2rem;
-    font-weight: bold;
 }
 
 .tagline {
@@ -32,8 +24,7 @@ header h1 {
     font-style: italic;
 }
 
-
-nav {
+.main-nav {
     text-align: center;
     border-top: 1px solid #000;
     border-bottom: 1px solid #000;
@@ -43,17 +34,15 @@ nav {
     max-width: 800px;
 }
 
-nav a {
+.nav-link {
     text-decoration: none;
     color: #000;
     font-weight: bold;
     padding: 0 15px;
 }
-
-nav a.active {
+.active {
     text-decoration: underline;
 }
-
 
 .container {
     flex: 1;
@@ -62,7 +51,6 @@ nav a.active {
     margin: 0 auto;
     padding: 20px;
 }
-
 
 .image-placeholder {
     border: 1px solid #000;
@@ -76,14 +64,11 @@ nav a.active {
     background-color: #e8e4db;
     overflow: hidden;
 }
-
-.image-placeholder img {
+.product-img {
     width: 100%;
     height: auto;
     object-fit: contain;
 }
-
-/* Page 1: Home Styles */
 .product-card {
     text-align: center;
     margin-bottom: 30px;
@@ -106,7 +91,6 @@ nav a.active {
     max-width: 700px;
 }
 
-
 .item-title {
     margin-bottom: 10px;
 }
@@ -114,8 +98,7 @@ nav a.active {
 .underline {
     text-decoration: underline;
 }
-
-.specs p {
+.spec-detail {
     margin-bottom: 15px;
 }
 
@@ -123,7 +106,6 @@ nav a.active {
     font-weight: bold;
     font-size: 1.2rem;
 }
-
 
 .contact-intro {
     text-align: justify;
@@ -154,7 +136,6 @@ nav a.active {
     font-family: inherit;
 }
 
-
 .btn-container {
     text-align: center;
     margin-top: 20px;
@@ -176,7 +157,6 @@ nav a.active {
     color: #fff;
 }
 
-
 .slogan {
     text-align: center;
     font-style: italic;
@@ -185,7 +165,7 @@ nav a.active {
 }
 
 
-footer {
+.main-footer {
     border-top: 1px solid #000;
     width: 90%;
     max-width: 800px;
@@ -195,17 +175,12 @@ footer {
     text-align: left;
 }
 
-footer p {
-    margin-bottom: 5px;
-}
-
-
 @media (max-width: 600px) {
-    nav a {
+    .nav-link {
         padding: 0 5px;
         font-size: 0.85rem;
     }
-    header h1 {
+    .main-header {
         font-size: 1.5rem;
     }
 }
